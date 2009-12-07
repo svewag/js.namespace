@@ -1,0 +1,37 @@
+<html>
+<head>
+	<script src="namespace.js"></script>
+</head>
+<body>
+	<h2>
+		<i>
+			register("js.namespace.module1", function(){<br />
+			&nbsp;&nbsp;&nbsp;this.start = function(){<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("start module 1")<br />
+			&nbsp;&nbsp;&nbsp;}<br />
+			&nbsp;&nbsp;&nbsp;this.end = function(){<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("end module 1")<br />
+			&nbsp;&nbsp;&nbsp;}<br />
+			});
+	</h2>
+	<button style="font-size:24px;" onclick="js.namespace.module1.start()">js.namespace.module1.start()</button>
+	<button style="font-size:24px;" onclick="js.namespace.module1.end()">js.namespace.module1.end()</button>
+
+	<br /><br />
+	<hr />
+	
+	<h2>
+		<i>
+			register("js.namespace.module2", function(){<br />
+			&nbsp;&nbsp;&nbsp;this.start = function(){<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("start module 2")<br />
+			&nbsp;&nbsp;&nbsp;}<br />
+			&nbsp;&nbsp;&nbsp;this.end = function(){<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert("end module 2")<br />
+			&nbsp;&nbsp;&nbsp;}<br />
+			});
+	</h2>
+	<button style="font-size:24px;" onclick="js.namespace.module2.start()">js.namespace.module2.start()</button>
+	<button style="font-size:24px;" onclick="js.namespace.module2.end()">js.namespace.module2.end()</button>
+</body>
+</html>
